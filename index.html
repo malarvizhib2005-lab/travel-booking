@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wanderly makes meaningful trips feel easy.">
+  <title>Wanderly | Go somewhere memorable</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div id="toast" class="toast" role="status"></div>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Wanderly home"><span class="brand-mark">w</span><span>Wanderly</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="/destinations">Destinations</a>
+      <a href="/packages">Packages</a>
+      <a href="/hotels">Stays</a>
+      <a href="/payment">Payment</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    <button class="login-trigger" data-open-login>Log in <span>↗</span></button>
+    <button class="menu-trigger" aria-label="Open navigation">☰</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Travel, thoughtfully arranged <span class="eyebrow-line"></span></p>
+        <h1>Go somewhere<br><em>memorable.</em></h1>
+        <p class="hero-intro">The world is wide. Your trip should feel personal. Discover beautifully considered stays, local experiences, and the freedom to travel your way.</p>
+        <div class="hero-actions"><a class="button button-dark" href="/destinations">Explore places <span>↗</span></a><a class="text-link" href="/packages">See how it works <span>→</span></a></div>
+        <div class="hero-proof"><div class="avatar-stack"><span>AM</span><span>JL</span><span>RK</span><span>+</span></div><div><strong>4.9 / 5</strong><small>Loved by 2,000+ travelers</small></div></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-wrap"><img id="hero-image" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1300&q=85" alt="Sunlit road through a mountain landscape"><div class="image-caption"><span id="slide-location">Dolomites, Italy</span><span id="slide-count">01 / 03</span></div></div>
+        <button class="slide-arrow previous" aria-label="Previous image">←</button><button class="slide-arrow next" aria-label="Next image">→</button>
+        <div class="hero-note"><span class="note-icon">✦</span><div><strong>New places,<br>new perspective.</strong><small>Take the scenic route</small></div></div>
+      </div>
+    </section>
+
+    <section class="trust-strip"><div><span class="trust-icon">✳</span><strong>Trips with a human touch</strong></div><div><span class="trust-icon">◌</span><strong>Handpicked, not endless</strong></div><div><span class="trust-icon">↗</span><strong>Plans that stay flexible</strong></div><div><span class="trust-icon">♡</span><strong>Real help, always</strong></div></section>
+
+    <section id="destinations" class="section-shell destinations-section">
+      <div class="section-heading"><div><p class="eyebrow">Where to next?</p><h2>Places with a<br><em>point of view.</em></h2></div><p class="section-description">Some places stay with you. Start with one that feels like the beginning of something.</p></div>
+      <div id="destination-grid" class="destination-grid"></div>
+      <div class="center-action"><a class="button button-outline" href="/destinations">View all destinations <span>↗</span></a></div>
+    </section>
+
+    <section class="review-section section-shell"><div class="review-photo"><img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1000&q=85" alt="Colorful riverside houses in a tropical destination"><span class="photo-stamp">W</span></div><div class="review-copy"><p class="eyebrow">A note from our travelers</p><div class="quote-mark">“</div><blockquote>Wanderly took the noise out of planning. Every detail felt considered, but the trip still felt completely ours.</blockquote><div class="review-author"><span class="author-avatar">SC</span><div><strong>Sarah Chen</strong><small>Wandered through Portugal</small></div><div class="review-stars">★★★★★</div></div></div></section>
+
+    <section id="packages" class="process-section"><div class="section-shell"><div class="section-heading"><div><p class="eyebrow">The Wanderly way</p><h2>Less planning.<br><em>More being there.</em></h2></div><p class="section-description">Tell us what pulls you in. We take care of the details that make a trip feel like yours.</p></div><div class="process-grid"><article><span class="process-number">01</span><span class="process-icon">⌕</span><h3>Find your feeling</h3><p>Browse places by the mood you want to bring home, not just a pin on a map.</p></article><article><span class="process-number">02</span><span class="process-icon">✣</span><h3>Make it yours</h3><p>Choose a thoughtfully built package, then shape the rhythm around you.</p></article><article><span class="process-number">03</span><span class="process-icon">↗</span><h3>Just go</h3><p>From first hello to final checkout, a real person is in your corner.</p></article></div></div></section>
+
+    <section id="stays" class="booking-section section-shell"><div class="booking-panel"><div><p class="eyebrow">Ready when you are</p><h2>Your next chapter<br>starts <em>here.</em></h2><p>Choose a destination to see its handpicked stays and flexible travel packages.</p></div><a class="button button-light" href="/destinations">Start exploring <span>↗</span></a></div></section>
+
+    <section id="contact" class="contact-section section-shell"><div class="contact-info"><p class="eyebrow">Let's talk travel</p><h2>Have a question?<br><em>We’re all ears.</em></h2><p>Our travel desk is made of people who love maps, good coffee, and finding the right answer.</p><a class="button button-outline" href="/contact">Open contact page <span>↗</span></a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-top"><a class="brand brand-light" href="/"><span class="brand-mark">w</span><span>Wanderly</span></a><p>Travel made personal.<br>Memories made lasting.</p><div class="footer-links"><a href="/destinations">Destinations</a><a href="/packages">Packages</a><a href="/hotels">Stays</a><a href="/payment">Payment</a><a href="/contact">Contact</a><button data-open-login>Admin / customer login</button></div></div><div class="footer-bottom"><span>© 2026 Wanderly Travel Co.</span><span>Made for the curious</span></div></footer>
+
+  <dialog id="login-dialog"><form method="dialog" class="login-modal" id="login-form"><button class="modal-close" value="cancel" aria-label="Close login">×</button><p class="eyebrow">Welcome back</p><h2>Pick up where<br><em>you left off.</em></h2><div class="role-switch"><button type="button" class="active" data-role="customer">Customer</button><button type="button" data-role="admin">Admin</button></div><input type="hidden" name="role" value="customer"><label>Email address<input type="email" name="email" required placeholder="you@example.com"></label><label>Password<input type="password" name="password" required placeholder="••••••••"></label><button class="button button-dark" type="submit">Log in <span>↗</span></button></form></dialog>
+  <div id="booking-modal" class="modal-overlay" hidden><div class="booking-modal"><button class="modal-close" data-close-booking aria-label="Close booking">×</button><div id="booking-step"></div></div></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
